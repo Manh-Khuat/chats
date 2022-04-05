@@ -1,0 +1,24 @@
+version: '3.7'
+
+networks:
+  frontend:
+    external:
+      name: mainnet
+
+services:
+
+  ttm-app-fe:
+    container_name: ttm-app-fe
+    image: ttmop/ttm-app-fe
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    restart: always
+    networks:
+      - frontend
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - VIRTUAL_HOST=app.ttm-op.local
