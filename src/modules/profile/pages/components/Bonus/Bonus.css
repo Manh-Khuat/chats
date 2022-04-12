@@ -1,0 +1,45 @@
+:root {
+    --heading-color: #7babdb;
+}
+.iconTitle {
+    display: block;
+    width: 6px;
+    background-color: #1976d2;
+    margin: 2px;
+    height: 14px;
+}
+.title >h3 {
+    background-color: var(--heading-color);
+    font-size: 12px;
+    text-align: left;
+    padding: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: 500;
+    display: flex;
+    color: #01070e;
+}
+.inputTableCell {
+    width: 90% ;
+    border: none ;
+    font-size: 14px ;
+    padding-left: 12px ;
+}
+.inputTableCell:focus {
+    outline: none ;
+}
+.inputItemsDate{
+    border: none ;
+    font-size: 14px ;
+
+
+}
+.inputItemsDate:focus {
+    outline: none ;
+
+}
+.inputItemsDate:hover {
+    outline: none ;
+    font-size: 16px;
+
+}
